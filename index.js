@@ -23,3 +23,23 @@ function potenciacion ( a, b) {
 }
 
 //7
+function separarPalabras (string) {
+    return string.split(' ')
+}
+
+//8
+function repetirString (string, number) {
+    return string.repeat(number)
+}
+
+//9
+function esPrimo (number) {
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+            return false
+        }
+    }
+    return true
+}
+
+//10
