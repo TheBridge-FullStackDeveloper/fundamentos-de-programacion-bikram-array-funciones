@@ -18,3 +18,8 @@ function suma ( a, b) {
 }
 
 //6
+function potenciacion ( a, b) {
+    return a ** b
+}
+
+//7
