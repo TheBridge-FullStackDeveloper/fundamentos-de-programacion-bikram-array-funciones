@@ -11,4 +11,10 @@ const arrayNumerosPares = [ 0, 2, 4, 6, 8]
 //4
 const arrayBidimensional = [[ 0, 1, 2], [ 'a', 'b', 'c']]
 
+
 //5
+function suma ( a, b) {
+    return a + b
+}
+
+//6
