@@ -74,3 +74,8 @@ function arrayMapi (array, fArray) {
     return newArray
 } 
 
+//14
+function eliminarDuplicados(array) {
+    return [...new Set(array)]
+    
+}
