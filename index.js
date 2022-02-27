@@ -61,29 +61,16 @@ function obtenerPares( array) {
 //12  no va
 function pintarArray (array) {
     let newString = ''
-    for (let i = 0; i < array.length; i++) {    // por qué esto da una coma de más al final??
-        if (i !== 0 && i < array.length){
+    for (let i = 0; i < array.length; i++) {    
+        if (i !== 0 && (i+1) < array.length){       //elements in between
             newString += ' ' + array[i].toString() + ','
-        } else if (i === array.length) {
-            newString += array[i].toString()
-        } else {
-            newString += array[i].toString() + ','
+        } else if ((i+1) === array.length) {        //last element
+            newString += ' ' + array[i].toString() +']'
+        } else {                                    //first element
+            newString += '['+ array[i].toString() + ','
         }
-        /* switch (i) {
-            case 0:
-                newString += array[i].toString() + ','
-                break;
-        
-            case array.length:
-                newString += ' ' + array[i].toString()
-                break;
-            default:
-                newString += array[i].toString() + ','
-                break;
-        }
-         */
     }
-    return '['+newString.slice (0, -1)+']'
+    return newString
 }
 
 //13
