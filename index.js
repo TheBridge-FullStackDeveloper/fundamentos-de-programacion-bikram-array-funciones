@@ -58,4 +58,19 @@ function obtenerPares( array) {
     return newArray
 }
 
-//
+//12  no va
+/* function pintarArray (array) {
+    return '['+array.toString()+']'
+} */
+
+//13
+function arrayMapi (array, fArray) {
+    let newArray = []
+    for (let i = 0; i < array.length; i++) {
+        fArray(array[i])
+        newArray.push(fArray(array[i]))
+        
+    }
+    return newArray
+} 
+
