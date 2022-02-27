@@ -59,9 +59,32 @@ function obtenerPares( array) {
 }
 
 //12  no va
-/* function pintarArray (array) {
-    return '['+array.toString()+']'
-} */
+function pintarArray (array) {
+    let newString = ''
+    for (let i = 0; i < array.length; i++) {    // por qué esto da una coma de más al final??
+        if (i !== 0 && i < array.length){
+            newString += ' ' + array[i].toString() + ','
+        } else if (i === array.length) {
+            newString += array[i].toString()
+        } else {
+            newString += array[i].toString() + ','
+        }
+        /* switch (i) {
+            case 0:
+                newString += array[i].toString() + ','
+                break;
+        
+            case array.length:
+                newString += ' ' + array[i].toString()
+                break;
+            default:
+                newString += array[i].toString() + ','
+                break;
+        }
+         */
+    }
+    return '['+newString.slice (0, -1)+']'
+}
 
 //13
 function arrayMapi (array, fArray) {
@@ -122,3 +145,39 @@ const arrayFunciones = [
     function multiplicacion(a, b) {
         return a * b
     }]
+
+
+//23
+function ordenarArray2 (array) {
+    return array.sort()
+}
+
+//24
+function obtenerImpares(array) {
+    let newArray = []
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 !== 0) {
+            newArray.push(array[i])
+        } 
+    }
+    return newArray
+}
+
+//25
+function sumarArray (array) {
+    let suma = 0
+    for (let i = 0; i < array.length; i++) {
+        suma += array [i]
+    }
+    return suma
+}
+
+//26
+function multiplicarArray (array) {
+    let multiplicacion = 1
+    for (let i = 0; i < array.length; i++) {
+        multiplicacion *= array [i]
+        
+    }
+    return multiplicacion
+}
