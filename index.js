@@ -42,4 +42,20 @@ function esPrimo (number) {
     return true
 }
 
+
 //10
+function ordenarArray ( array) {
+    return array.sort()
+}
+
+//11
+function obtenerPares( array) {
+    let newArray = []
+    for (let i = 0; i < array.length; i++) {
+        if (array [i] % 2 === 0)
+        newArray.push(array[i])
+    }
+    return newArray
+}
+
+//
